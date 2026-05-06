@@ -12,6 +12,9 @@ creates the file before the script runs. In that case, changes made through
 <code>XDEBUG_CONFIG</code>
 <a href="/docs/all_settings#XDEBUG_CONFIG">environment variable</a>.</p>
 
+<p class="note">Make sure the output directory exists and is writable by Xdebug,
+especially on Windows.</p>
+
 <p class="warning">Many Linux distributions now use systemd, which
 implements <strong>private tmp</strong> directories. This means that when PHP
 is run through a web server or as PHP-FPM, the <code>/tmp</code> directory is
